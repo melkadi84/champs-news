@@ -1,0 +1,192 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Header */
+.header .container .header-bg {
+  width: 100%;
+  height: 405px;
+  background-color: #eee;
+  /* background: url(../img/profile/p-header2.jpg);
+  background-size: cover;
+  background-position: center center; */
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header .container .header-bg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 767px) {
+  .header .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header .container .header-bg {
+    height: 250px;
+  }
+
+  .header .container .header-bg img {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+}
+
+.header .container .header-pic {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+}
+
+.header .container .header-pic img {
+  border: 5px solid #fff;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .header .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header .container .header-pic {
+    bottom: -40px;
+  }
+  
+  .header .container .header-pic img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.header .container .player-info {
+  text-align: center;
+  padding: 20px;
+}
+
+.header .container .player-info .p-name h2 {
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0;
+}
+
+.header .container .player-info .p-bio p {
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .header .container .player-info .p-bio p {
+    font-weight: 12;
+  }
+}
+
+.header .container .header-hr {
+  width: 90%;
+  background-color: #eee;
+  border: 0;
+  height: 1px;
+}
+/* End Header */
+
+/* Start Player Details */
+.player-details .p-details {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+@media (max-width: 767px) {
+  .player-details .p-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+.player-details .p-details .info-box {
+  border: 1px solid #999;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.player-details .p-details .info-box .info {
+  padding: 10px;
+}
+
+.player-details .p-details .info-box .info img {
+  width: 100%;
+}
+
+.player-details .p-details .info-box .info svg {
+  width: 20px;
+}
+
+.player-details .p-details .info-box .info .title {
+  width: 150px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.player-details .p-details .info-box .info .title::after {
+  content: ":";
+}
+/* End Player Details */
