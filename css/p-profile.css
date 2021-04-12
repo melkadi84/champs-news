@@ -160,7 +160,7 @@ body {
 
 .player-details .p-details .info-box {
   border: 1px solid #999;
-  padding: 10px;
+  padding: 5px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -181,9 +181,14 @@ body {
 }
 
 .player-details .p-details .info-box .info .title {
-  width: 150px;
+  width: 120px;
   display: inline-block;
   font-weight: bold;
+  font-size: 14px;
+}
+
+.player-details .p-details .info-box .info span {
+  font-size: 14px;
 }
 
 .player-details .p-details .info-box .info .title::after {
