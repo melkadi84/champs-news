@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  direction: rtl;
+}
+
 body {
   font-family: 'Cairo', sans-serif;
 }
@@ -168,30 +172,37 @@ body {
   -o-border-radius: 4px;
 }
 
-.player-details .p-details .info-box .info {
+.player-details .p-details .info-box .info .icon {
   padding: 10px;
+  width: 25px;
+  display: inline-block;
 }
 
-.player-details .p-details .info-box .info img {
+.player-details .p-details .info-box .info .icon img {
   width: 16px;
 }
 
-.player-details .p-details .info-box .info svg {
+.player-details .p-details .info-box .info .icon svg {
   width: 20px;
 }
 
-.player-details .p-details .info-box .info .title {
-  width: 120px;
+.player-details .p-details .info-box .info .value {
+  display: inline-block;
+}
+
+.player-details .p-details .info-box .info .value .title {
+  width: 90px;
   display: inline-block;
   font-weight: bold;
   font-size: 14px;
+  margin-right: 5px;
 }
 
-.player-details .p-details .info-box .info span {
+.player-details .p-details .info-box .info .value span {
   font-size: 14px;
 }
 
-.player-details .p-details .info-box .info .title::after {
+.player-details .p-details .info-box .info .value .title::after {
   content: ":";
 }
 /* End Player Details */
